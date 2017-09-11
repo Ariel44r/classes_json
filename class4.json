@@ -1,0 +1,28 @@
+{
+    "name": "Luis",
+    "last_name": "Martínez",
+    "contacts": [
+      {
+        "name": "Hector",
+        "phone": "5555555555",
+        "address": {
+          "street": "Calle 1",
+          "number": "A10",
+          "neighborhood": "Colonia 1",
+          "zip_code": "11400"
+        },
+        "active": true
+      },
+      {
+        "name": "Jose",
+        "phone": "4444444444",
+        "address": {
+          "street": "Calle 2",
+          "number": "344",
+          "neighborhood": "Colonia 2",
+          "zip_code": "11400"
+        },
+        "active": false
+      }
+    ]
+}
