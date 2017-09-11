@@ -18,6 +18,7 @@ class address {
 }
 
 let dirección = address(street: "Calle 2", number: "344", neighborhood: "Colonia 2", zip_code: "11400")
+let dirección1 = address(street: "Calle 1", number: "A10", neighborhood: "Colonia 1", zip_code: "11400")
 //dirección.printData()
 
 class contact {
@@ -40,4 +41,28 @@ class contact {
 }
 
 let Jose = contact(name: "José", phone: "4444444444",address: dirección, active: true)
-Jose.printData()
+let Héctor = contact(name: "Héctor", phone: "5555555555",address: dirección1, active: false)
+//Jose.printData()
+
+class class4 {
+    var name: String
+    var last_name: String
+    var contacts = [Int: contact]()
+    init(name: String, last_name: String, contacts: [Int:contact]) {
+        self.name = name
+        self.last_name = last_name
+        for index in 0 ..< contacts.count {
+            self.contacts[index] = contacts[index]
+        }
+    }
+    func printData() {
+        print("Name: \(name)")
+        print("Last Name: \(last_name)")
+        for index in 0 ..< contacts.count {
+            contacts[index]!.printData()
+        }
+    }
+}
+
+let Luis = class4(name: "Luis", last_name: "Martínez", contacts: [0:Jose, 1: Héctor])
+Luis.printData()
